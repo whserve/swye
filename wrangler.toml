@@ -1,6 +1,13 @@
-name = "swye"
+#name = "swye"
+#main = "_worker.js"
+#compatibility_date = "2024-04-28"
+#usage_model = "bundled"
+#workers_dev = true
+
+
+name = "swye" # 修改为 CI 预期的名字
 main = "_worker.js"
-compatibility_date = "2024-04-28"
-compatibility_flags = [ "nodejs_compat" ]
-usage_model = "bundled"
-workers_dev = true
+compatibility_date = "2024-04-03" # 保持你原本的日期或更新的日期
+compatibility_flags = [ "nodejs_compat" ] # 核心修复：允许使用 node:crypto
+
+# 注意：确保删除了 usage_model 这一行
